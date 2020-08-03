@@ -1,0 +1,56 @@
+.whatwedo-conteiner {
+  display: block;
+  @media screen and (min-width: $mobile) {
+  }
+  @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 94px auto 0px auto;
+  }
+
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
+
+  h2 {
+    @extend .h2-font;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+.whatwedo-conteiner {
+  li {
+    width: 370px;
+    height: 294px;
+    margin-right: 30px;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li:last-of-type {
+    margin-right: 0px;
+  }
+
+  p {
+    @extend .h3-font;
+    color: $hero--text-color;
+    height: 70px;
+    background: $blok-title;
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+    padding-top: 27px;
+    margin: 0px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}

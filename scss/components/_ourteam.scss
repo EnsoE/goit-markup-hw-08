@@ -1,0 +1,109 @@
+.ourteam-backgr {
+  min-width: $mobile;
+  background-color: $pic-feature-wrap-color;
+  background-size: cover;
+}
+
+.ourteam-conteiner {
+  padding-top: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: $desktop;
+    padding-top: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+    margin: 94px auto 94px auto;
+    padding-top: 60px;
+    padding-bottom: 94px;
+  }
+
+  h2 {
+    @extend .h2-font;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px;
+    @media screen and (min-width: $desktop) {
+      max-width: $desktop;
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+.item {
+  background-color: white;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+  }
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 8 * 15px) / 4);
+    margin-right: 30px;
+  }
+}
+.name {
+  @extend .font-name;
+  color: $primary-text-color;
+}
+
+.profession {
+  @extend .font-name;
+  color: $text-color;
+}
+
+.list-icon {
+  width: 206px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.list-icon {
+  p {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    background-color: white;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    color: $section-color;
+    transition-property: color fill;
+    transition: $transition-values;
+  }
+
+  p:hover,
+  p:focus svg {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    background-color: $accent-color;
+    color: white;
+  }
+}
+
+.icon-social {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  --color1: currentColor;
+}

@@ -1,0 +1,215 @@
+footer {
+  background: $footer-color-fon;
+  position: relative;
+}
+
+.footer-box {
+  min-width: $mobile;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $mobile) {
+    max-width: $tablet;
+  }
+  @media screen and (min-width: $tablet) {
+    max-width: $desktop;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 76px;
+    margin-right: 89px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1200px;
+    height: 253px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 94px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer-logo {
+  text-align: center;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  padding-top: 60px;
+  margin: 0px;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+    margin-top: 60px;
+  }
+
+  &-web {
+    color: $accent-color;
+  }
+  &-studio {
+    color: $hero--text-color;
+  }
+}
+
+.footer-box {
+  address {
+    text-align: center;
+    margin-top: 20px;
+    @extend .some-font;
+    color: $hero--text-color;
+    @media screen and (min-width: $desktop) {
+      padding-top: 10px;
+    }
+  }
+}
+
+.footer-contacts {
+  text-align: center;
+
+  a {
+    @extend .some-font;
+    color: $info--footer-color;
+  }
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+    margin-top: 9px;
+  }
+}
+
+/*footer-icon-list*/
+.footer-social {
+  margin-top: 60px;
+  width: 206px;
+  margin-right: auto;
+  margin-left: auto;
+  span {
+    display: block;
+    text-align: center;
+    @extend .h3-font;
+    color: $hero--text-color;
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+    }
+  }
+  ul {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    margin-top: 21px;
+  }
+  @media screen and (min-width: $mobile) {
+    max-width: $tablet;
+    margin: 0px;
+    padding-top: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 206px;
+    margin-top: 72px;
+    padding: 0px;
+  }
+}
+
+.icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $footer-social-beckground;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  transition: $transition-values;
+}
+.footer-icon-social {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  --color1: white;
+}
+.icon-box:hover,
+.icon-box:focus {
+  border-radius: 100%;
+  background-color: $accent-color;
+}
+
+/*mail-input*/
+.footer-input {
+  margin-top: 60px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $mobile) {
+    max-width: $tablet;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: $desktop;
+  }
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 12px;
+    width: 570px;
+  }
+  span {
+    margin-bottom: 20px;
+    display: inline-block;
+    @extend .h3-font;
+    color: $hero--text-color;
+  }
+  form {
+    margin-bottom: 20px;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  input {
+    @extend .project-text;
+    color: $info--footer-color;
+    width: 358px;
+    height: 50px;
+    background-color: $footer-color-fon;
+    border-color: $info--footer-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding-left: 16px;
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+  }
+
+  button {
+    @extend %button;
+    margin-top: 20px;
+    @media screen and (min-width: $desktop) {
+      margin-top: 0px;
+      margin-left: 12px;
+    }
+  }
+  button::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icon-send.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-flex;
+    margin-left: 10px;
+  }
+}

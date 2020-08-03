@@ -1,0 +1,114 @@
+.benefits {
+  min-width: $mobile;
+  margin: 0px;
+  padding-top: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: $mobile) {
+    max-width: $tablet;
+  }
+  @media screen and (min-width: $tablet) {
+    max-width: $desktop;
+    padding: 0;
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+    width: 1170px;
+    padding: 0;
+    margin: 94px auto 0px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  li::before {
+    display: block;
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: center;
+    height: 120px;
+    background: $pic-feature-wrap-color;
+    border-radius: 4px;
+
+    @media screen and (min-width: $desktop) {
+      width: 270px;
+      height: 120px;
+      margin: 0;
+    }
+  }
+
+  li {
+    margin-right: 15px;
+    margin-left: 15px;
+    text-align: center;
+    display: inline-block;
+
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+      display: inline-block;
+      padding: 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin: 0;
+      margin-right: 30px;
+    }
+  }
+
+  li:nth-child(1)::before {
+    background-image: url(../img/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  li:nth-child(2)::before {
+    background-image: url(../img/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  li:nth-child(3)::before {
+    background-image: url(../img/diagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  li:nth-child(4)::before {
+    background-image: url(../img/astronaut.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  li:nth-child(4) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 0px;
+    }
+  }
+}
+
+.benefits {
+  h3 {
+    @extend .h3-font;
+    color: $primary-text-color;
+    margin-top: 30px;
+    text-align: center;
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+    }
+  }
+  p {
+    @extend .some-font;
+    color: $text-color;
+    margin-top: 10px;
+  }
+}
+
+.line-main {
+  margin-top: 77px;
+}

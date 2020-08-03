@@ -1,0 +1,170 @@
+.top-line {
+  min-width: $mobile;
+  display: relative;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: $desktop;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
+    display: flex;
+  }
+}
+
+.nav {
+  display: none;
+  width: 294px;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+  li {
+    position: relative;
+    overflow: hidden;
+    transition-property: all;
+    transition: $transition-values;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    padding-top: 34px;
+    padding-left: 0px;
+    display: absolute;
+    right: auto;
+    left: auto;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 32px;
+    margin-left: 39px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+
+.nav-line {
+  height: 4px;
+  background: $accent-color;
+  border-radius: 2px;
+  margin-bottom: 0;
+  padding: 0;
+  transform: translateY(200%);
+  margin-top: 27px;
+  transition-property: all;
+  transition: $transition-values;
+}
+
+.nav li:hover .nav-line {
+  transform: translateY(0);
+}
+
+.nav a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  transition-property: color;
+  transition: $transition-values;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.contact-list {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    display: block;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 21px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: 0px;
+    list-style: none;
+
+    li {
+      margin-top: auto;
+      margin-bottom: auto;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.contact-list {
+  a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: $text-color;
+    padding: 0px;
+    border: none;
+    transition-property: color;
+    transition: $transition-values;
+    @media screen and (min-width: $desktop) {
+      margin-left: 30px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.contact-list a {
+  &:hover,
+  &:focus svg {
+    color: $accent-color;
+  }
+}
+
+.icon-phone {
+  display: flex;
+  background-size: cover;
+  display: inline-block;
+  width: 13px;
+  height: 18px;
+  margin-right: 10px;
+  --color1: currentColor;
+}
+
+.icon-envelope {
+  display: inline-block;
+  padding: 0;
+  width: 20px;
+  height: 14.2px;
+  margin-right: 10px;
+  --color1: currentColor;
+}
+
+.menu-icon {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}

@@ -1,0 +1,56 @@
+.blok-title {
+  min-width: $mobile;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  padding-top: 118px;
+
+  @media screen and (min-width: $mobile) {
+    max-width: $tablet;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: $desktop;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px;
+    height: 600px;
+  }
+
+  margin-bottom: 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../img/header-img2.jpg);
+  background-color: rgba(47, 48, 58, 0.8);
+
+  h1 {
+    /**width: 696px;
+    height: 120px;**/
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $hero--text-color;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 30px;
+    @media screen and (min-width: $desktop) {
+      font-size: 44px;
+      line-height: 60px;
+    }
+  }
+
+  button {
+    @extend %button;
+  }
+}

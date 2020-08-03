@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!---Шапка сторінки-->
+    <header>
+      <!--Головна навігація-->
+      <nav class="top-line">
+        <a href="/" class="web-studio"><span class="web">Web</span><span class="studio"> Studio</span></a>
+        <ul class="nav">
+          <li>
+            <a href="./index.html">Студія</a>
+            <p class="nav-line"></p>
+          </li>
+          <li>
+            <a href="./portfolio.html">Портфоліо</a>
+            <p class="nav-line"></p>
+          </li>
+          <li>
+            <a href="">Контакти</a>
+            <p class="nav-line"></p>
+          </li>
+        </ul>
+        <!--Зворотній звязок-->
+        <!--Зворотній звязок-->
+        <ul class="contact-list">
+          <li>
+            <a href="info@devstudio.com">
+              <svg class="icon-envelope" width="16" height="11.2">
+                <use href="./img/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="+380961111111">
+              <svg class="icon-phone" width="10" height="14.94">
+                <use href="./img/sprite.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a>
+          </li>
+        </ul>
+        <div class="menu-icon">
+        <a href="">
+          <svg  width="40" height="40" >
+            <use href="./img/menu-40px.svg"></use>
+          </svg>
+        </a>
+        </div>
+      </nav>
+    </header>
+    <hr class="line-portfolio" width="" size="1" color="#ececec" />
+  
+    <!--Унікальний контент-->
+    <main>
+      <h1 class="portfolio-conteiner">
+        <!--Filtres-->
+        <ul class="filters-list">
+          <li><button type="button">Все</button></li>
+          <li>
+            <button type="button">Веб-сайти</button>
+          </li>
+          <li><button type="button">Додатки</button></li>
+          <li><button type="button">Дизайн</button></li>
+          <li>
+            <button type="button">Маркетинг</button>
+          </li>
+        </ul>
+
+        <!--Projects-->
+        <ul class="projects-list">
+          <li class="project">
+            <a href="">
+              <div class="project-box">
+                <picture>
+                  <sorce srcset="./img/tabl-tehnocrak.webp 354w,
+                                 ./img/desk-tehnocrak.webp 370w,
+                                 ./img/mob-tehnocrak.webp 450w,
+                                ./img/tabl-tehnocrak@2x.webp 708w,
+                                ./img/desk-tehnocrak@2x.webp 740w,
+                                ./img/mob-tehnocrak@2x.webp 900w,
+                              " type="image/web" />
+                
+                  <img srcset="
+                                  ./img/tabl-tehnocrak.jpg     354w,
+                                  ./img/desk-tehnocrak.jpg    370w,
+                                  ./img/mob-tehnocrak.jpg      450w,
+                                  ./img/tabl-tehnocrak@2x.jpg  708w,
+                                  ./img/desk-tehnocrak@2x.jpg 740w,
+                                  ./img/mob-tehnocrak@2x.jpg   900w,
+                                " 
+                                src="" alt="зображення лептопа" 
+                                sizes="(min-width: 1200px) 30vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw"/>
+                </picture>
+              <p class="project-description">Технокряк це сучасна платформа для поширення технологій. Компанії використовують цю платформу для цифрового шпіонажу та атак на захищені сервери конкурентів.</p>
+              </div>
+              <h3 class="project-title">Технокряк</h3>
+              <p class="project-text">Веб-сайт</p>
+            </a>
+          </li>
+          <li class="project">
+            <a href="">
+              <div class="project-box">
+              <picture>
+                <sorce srcset="
+                                              ./img/mob-Poster-Golden-Star.webp 450w,
+                                              ./img/mob-Poster-Golden-Star@2x.webp 900w,
+                                              ./img/tabl-Poster-Golden-Star.webp 354w,
+                                              ./img/tabl-Poster-Golden-Star@2x.webp 708w,
+                                              ./img/desk-Poster-Golden-Star.webp 370w,
+                                              ./img/desk-Poster-Golden-Star@2x.webp 740w
+                                            " type="image/web" />
+              
+                <img srcset="
+                                                ./img/mob-Poster-Golden-Star.jpg      450w,
+                                                ./img/mob-Poster-Golden-Star@2x.jpg   900w,
+                                                ./img/tabl-Poster-Golden-Star.jpg     354w,
+                                                ./img/tabl-Poster-Golden-Star@2x.jpg  708w,
+                                                ./img/desk-Poster-Golden-Star.jpg    370w,
+                                                ./img/desk-Poster-Golden-Star@2x.jpg 740w
+                                              " src="./img/img.jpg" alt="зображення лептопа"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw"/>
+              </picture>
+              <p class="project-description">Технокряк це сучасна платформа для поширення технологій. Компанії використовують цю
+                платформу для цифрового шпіонажу та атак на захищені сервери конкурентів.</p>
+              </div>
+              <h3 class="project-title" lang="en">
+                Постер New Orlean vs Golden Star
+              </h3>
+              <p class="project-text">Дизайн</p>
+              </p>
+            </a>
+          </li>
+          <li class="project">
+            <a href="">
+              <div class="project-box">
+              <picture>
+                <sorce srcset="
+                                              ./img/mob-restaurant-Seafood.webp 450w,
+                                              ./img/mob-restaurant-Seafood@2x.webp 900w,
+                                              ./img/tabl-restaurant-Seafood.webp 354w,
+                                              ./img/tabl-restaurant-Seafood@2x.webp 708w,
+                                              ./img/desk-restaurant-Seafood.webp 370w,
+                                              ./img/desk-restaurant-Seafood@2x.webp 740w
+                                            " type="image/web" />
+              
+                <img srcset="
+                                                ./img/mob-restaurant-Seafood.jpg      450w,
+                                                ./img/mob-restaurant-Seafood@2x.jpg   900w,
+                                                ./img/tabl-restaurant-Seafood.jpg     354w,
+                                                ./img/tabl-restaurant-Seafood@2x.jpg  708w,
+                                                ./img/desk-restaurant-Seafood.jpg    370w,
+                                                ./img/desk-restaurant-Seafood@2x.jpg 740w
+                                              " src="" alt="зображення лептопа"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw"/>
+              </picture>
+              <p class="project-description">Технокряк це сучасна платформа для поширення технологій. Компанії використовують цю
+                платформу для цифрового шпіонажу та атак на захищені сервери конкурентів.</p>
+              </div>
+              <h3 class="project-title">Ресторан Seafood</h3>
+              <p class="project-text">Додаток</p>
+              </p>
+            </a>
+          </li>
+          <li class="project">
+            <a href="">
+              <div class="project-box">
+              <picture>
+                <sorce srcset="
+                                              ./img/mob-Project-Prime.webp 450w,
+                                              ./img/mob-Project-Prime@2x.webp 900w,
+                                              ./img/tabl-Project-Prime.webp 354w,
+                                              ./img/tabl-Project-Prime@2x.webp 708w,
+                                              ./img/desk-Project-Prime.webp 370w,
+                                              ./img/desk-Project-Prime@2x.webp 740w
+                                            " type="image/web" />
+              
+                <img srcset="
+                                                ./img/mob-Project-Prime.jpg      450w,
+                                                ./img/mob-Project-Prime@2x.jpg   900w,
+                                                ./img/tabl-Project-Prime.jpg     354w,
+                                                ./img/tabl-Project-Prime@2x.jpg  708w,
+                                                ./img/desk-Project-Prime.jpg    370w,
+                                                ./img/desk-Project-Prime@2x.jpg 740w
+                                              " src="" alt="зображення лептопа"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw"/>
+              </picture>
+              <p class="project-description">Технокряк це сучасна платформа для поширення технологій. Компанії використовують цю
+                платформу для цифрового шпіонажу та атак на захищені сервери конкурентів.</p>
+              </div>
+              <h3 class="project-title" lang="en">Проект Prime</h3>
+              <p class="project-text">Маркетинг</p>
+              </p>
+            </a>
+          </li>
+          <li class="project">
+            <a href="">
+              <div class="project-box">
+              <picture>
+                <sorce srcset="
+                                              ./img/mob-Project-Boxes.webp 450w,
+                                              ./img/mob-Project-Boxes@2x.webp 900w,
+                                              ./img/tabl-Project-Boxes.webp 354w,
+                                              ./img/tabl-Project-Boxes@2x.webp 708w,
+                                              ./img/desk-Project-Boxes.webp 370w,
+                                              ./img/desk-Project-Boxes@2x.webp 740w
+                                            " type="image/web" />
+              
+                <img srcset="
+                                                ./img/mob-Project-Boxes.jpg      450w,
+                                                ./img/mob-Project-Boxes@2x.jpg   900w,
+                                                ./img/tabl-Project-Boxes.jpg     354w,
+                                                ./img/tabl-Project-Boxes@2x.jpg  708w,
+                                                ./img/desk-Project-Boxes.jpg    370w,
+                                                ./img/desk-Project-Boxes@2x.jpg 740w
+                                              " src="./img/img.jpg" alt="зображення лептопа"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw"/>
+              </picture>
+              <p class="project-description">Технокряк це сучасна платформа для поширення технологій. Компанії використовують цю
+                платформу для цифрового шпіонажу та атак на захищені сервери конкурентів.</p>
+              </div>
+              <h3 class="project-title" lang="en">Проект Boxes</h3>
+              <p class="project-text">Додаток</p>
+              </p>
+            </a>
+          </li>
+          <li class="project">
+            <a href="">
+              <div class="project-box">
+              <picture>
+                <sorce srcset="
+                                              ./img/mob-Inspiration-has-no-Borders.webp 450w,
+                                              ./img/mob-Inspiration-has-no-Borders@2x.webp 900w,
+                                              ./img/tabl-Inspiration-has-no-Borders.webp 354w,
+                                              ./img/tabl-Inspiration-has-no-Borders@2x.webp 708w,
+                                              ./img/desk-Inspiration-has-no-Borders.webp 370w,
+                                              ./img/desk-Inspiration-has-no-Borders@2x.webp 740w
+                                            " type="image/web" />
+              
+                <img srcset="
+                                                ./img/mob-Inspiration-has-no-Borders.jpg      450w,
+                                                ./img/mob-Inspiration-has-no-Borders@2x.jpg   900w,
+                                                ./img/tabl-Inspiration-has-no-Borders.jpg     354w,
+                                                ./img/tabl-Inspiration-has-no-Borders@2x.jpg  708w,
+                                                ./img/desk-Inspiration-has-no-Borders.jpg    370w,
+                                                ./img/desk-Inspiration-has-no-Borders@2x.jpg 740w
+                                              " src="./img/img.jpg" alt="зображення лептопа" 
+                                              sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw"/>
+              </picture>
+              <p class="project-description">Технокряк це сучасна платформа для поширення технологій. Компанії використовують цю
+                платформу для цифрового шпіонажу та атак на захищені сервери конкурентів.</p>
+              </div>
+              <h3 class="project-title" lang="en">
+                Inspiration has no Borders
+              </h3>
+              <p class="project-text">Веб-сайт</p>
+            </a>
+          </li>
+          <li class="project">
+            <a href="">
+              <div class="project-box">
+              <picture>
+                <sorce srcset="
+                                              ./img/mob-Edition-Limited-Edition.webp 450w,
+                                              ./img/mob-Edition-Limited-Edition@2x.webp 900w,
+                                              ./img/tabl-Edition-Limited-Edition.webp 354w,
+                                              ./img/tabl-Edition-Limited-Edition@2x.webp 708w,
+                                              ./img/desk-Edition-Limited-Edition.webp 370w,
+                                              ./img/desk-Edition-Limited-Edition@2x.webp 740w
+                                            " type="image/web" />
+              
+                <img srcset="
+                                                ./img/mob-Edition-Limited-Edition.jpg      450w,
+                                                ./img/mob-Edition-Limited-Edition@2x.jpg   900w,
+                                                ./img/tabl-Edition-Limited-Edition.jpg     354w,
+                                                ./img/tabl-Edition-Limited-Edition@2x.jpg  708w,
+                                                ./img/desk-Edition-Limited-Edition.jpg    370w,
+                                                ./img/desk-Edition-Limited-Edition@2x.jpg 740w
+                                              " src="./img/img.jpg" alt="зображення лептопа"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw"/>
+              </picture>
+              <p class="project-description">Технокряк це сучасна платформа для поширення технологій. Компанії використовують цю
+                платформу для цифрового шпіонажу та атак на захищені сервери конкурентів.</p>
+              </div>
+              <h3 class="project-title">Издание Limited Edition</h3>
+              <p class="project-text">Дизайн</p>
+            </a>
+          </li>
+          <li class="project">
+            <a href="">
+              <div class="project-box">
+              <picture>
+                <sorce srcset="
+                                              ./img/mob-Project-LAB.webp 450w,
+                                              ./img/mob-Project-LAB@2x.webp 900w,
+                                              ./img/tabl-Project-LAB.webp 354w,
+                                              ./img/tabl-Project-LAB@2x.webp 708w,
+                                              ./img/desk-Project-LAB.webp 370w,
+                                              ./img/desk-Project-LAB@2x.webp 740w
+                                            " type="image/web" />
+              
+                <img srcset="
+                                                ./img/mob-Project-LAB.jpg      450w,
+                                                ./img/mob-Project-LAB@2x.jpg   900w,
+                                                ./img/tabl-Project-LAB.jpg     354w,
+                                                ./img/tabl-Project-LAB@2x.jpg  708w,
+                                                ./img/desk-Project-LAB.jpg    370w,
+                                                ./img/desk-Project-LAB@2x.jpg 740w
+                                              " src="./img/img.jpg" alt="зображення лептопа"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw"/>
+              </picture>
+              <p class="project-description">Технокряк це сучасна платформа для поширення технологій. Компанії використовують цю
+                платформу для цифрового шпіонажу та атак на захищені сервери конкурентів.</p>
+              </div>
+              <h3 class="project-title">Проект LAB</h3>
+              <p class="project-text">Маркетинг</p>
+            </a>
+          </li>
+          <li class="project">
+            <a href="">
+              <div class="project-box">
+              <picture>
+                <sorce srcset="
+                                              ./img/mob-Growing-Business.webp 450w,
+                                              ./img/mob-Growing-Business@2x.webp 900w,
+                                              ./img/tabl-Growing-Business.webp 354w,
+                                              ./img/tabl-Growing-Business@2x.webp 708w,
+                                              ./img/desk-Growing-Business.webp 370w,
+                                              ./img/desk-Growing-Business@2x.webp 740w
+                                            " type="image/web" />
+              
+                <img srcset="
+                                                ./img/mob-Growing-Business.jpg      450w,
+                                                ./img/mob-Growing-Business@2x.jpg   900w,
+                                                ./img/tabl-Growing-Business.jpg     354w,
+                                                ./img/tabl-Growing-Business@2x.jpg  708w,
+                                                ./img/desk-Growing-Business.jpg    370w,
+                                                ./img/desk-Growing-Business@2x.jpg 740w
+                                              " src="" alt="зображення лептопа"
+                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw"/>
+              </picture>
+              <p class="project-description">Технокряк це сучасна платформа для поширення технологій. Компанії використовують цю
+                платформу для цифрового шпіонажу та атак на захищені сервери конкурентів.</p>
+              </div>
+              <h3 class="project-title">Growing Business</h3>
+              <p class="project-text">Додаток</p>
+            </a>
+          </li>
+        </ul>
+      </h1>
+    </main>
+
+    <!--Підвал-->
+    <footer>
+      <div class="footer-box">
+        <div>
+          <div class="footer-logo">
+            <span class="footer-logo-web">Web</span><span class="footer-logo-studio"> Studio</span>
+          </div>
+          <!--Контакти-->
+          <address>м.Київ, пр-т Лесі Українки, 26</address>
+          <div class="footer-contacts">
+            <a href="info@exemple.com">info@exemple.com</a>
+          </div>
+          <div class="footer-contacts">
+            <a href="+380991111111">+38 099 111 11 11</a>
+          </div>
+        </div>
+        <!--Соціалні сторінки-->
+        <div class="footer-social">
+          <span>ПРИЄДНУЙТЕСЬ</span>
+          <ul>
+              <li>
+                <a href="">
+                  <p class="icon-box">
+                   <svg class="footer-icon-social">
+                  <use href="./img/sprite.svg#icon-instagram"></use>
+                </svg>
+                </p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="icon-box">
+                <svg class="footer-icon-social">
+                  <use href="./img/sprite.svg#icon-twitter"></use>
+                </svg>
+                </p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <p class="icon-box">
+                   <svg class="footer-icon-social">
+                    <use href="./img/sprite.svg#icon-facebook"></use>
+                 </svg>
+                </p>
+                  </a>
+              </li>
+              <li>
+                <a href="">
+                    <p class="icon-box">
+                <svg class="footer-icon-social">
+                  <use href="./img/sprite.svg#icon-linkedin"></use>
+                </svg>
+                </p>
+                </a>
+              </li>
+          </ul>
+        </div>
+        <!--Розсилка-->
+        <div class="footer-input">
+          <span>ПІДПИШІТЬСЯ НА РОЗСИЛКУ</span>
+          <form>
+            <input type="email" name="email" id="email" placeholder="E-mail" />
+            <button type="submit">Підписатись</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
